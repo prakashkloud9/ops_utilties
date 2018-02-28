@@ -1,11 +1,7 @@
 #!/bin/bash
-#podname=$1
 namespace=$1
 region=$2
-#a=(`kubectl get ns |awk '{if(NR>1)print}'`)
-
 podarr=(`kubectl get po -n $namespace |awk '{if(NR>1)print}'| awk {'print $1'}`)
-
 for pod_name in "${podarr[@]:1}"
 do
 kubectl exec  $pod_name --namespace=$namespace -- bash -c "pid=\$(ps -aux|grep java|grep /kohls/config/application/ | awk '{print \$2}'|sed -n 1p) && \
