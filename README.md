@@ -7,6 +7,6 @@ How to use script:
   - Pass two parameters in script(1st param = namespace,2nd param =region)
 
 Syntax to run script:
-  sh pod_thread_dump.sh <namespace> <region>
+  sh pod_thread_dump.sh namespace region
 
 Example:    sh pod_thread_dump.sh mui-perf central
