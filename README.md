@@ -4,7 +4,7 @@ Description: this script can be used to get threaddums of all the pods specified
 How to use script:
 
   - Connect to any kubernetes cluster
-  - Pass two parameters in script(1st param = <namespace>,2nd param =<region>)
+  - Pass two parameters in script(1st param = namespace,2nd param =region)
 
 Syntax to run script:
   sh pod_thread_dump.sh <namespace> <region>
